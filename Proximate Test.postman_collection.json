@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "8d6874ac-bb70-4873-9b4d-763084408abe",
+		"name": "Proximate Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/webadmin/testproximate/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":\"1075258635\",\n    \"password\": \"testProximate\" \n}"
+				},
+				"url": {
+					"raw": "https://serveless.proximateapps-services.com.mx/proximatetools/dev/webadmin/testproximate/login",
+					"protocol": "https",
+					"host": [
+						"serveless",
+						"proximateapps-services",
+						"com",
+						"mx"
+					],
+					"path": [
+						"proximatetools",
+						"dev",
+						"webadmin",
+						"testproximate",
+						"login"
+					]
+				},
+				"description": "{\n\t\"typeDocument\" : 1,\n    \"numberDocument\" : \"437695\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "/webadmin/testproximate/getproducts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userToken\":\"1075258635\"\n}"
+				},
+				"url": {
+					"raw": "https://serveless.proximateapps-services.com.mx/proximatetools/dev/webadmin/testproximate/getproducts",
+					"protocol": "https",
+					"host": [
+						"serveless",
+						"proximateapps-services",
+						"com",
+						"mx"
+					],
+					"path": [
+						"proximatetools",
+						"dev",
+						"webadmin",
+						"testproximate",
+						"getproducts"
+					]
+				},
+				"description": "{\n\t\"typeDocument\" : 1,\n    \"numberDocument\" : \"437695\"\n}"
+			},
+			"response": []
+		}
+	]
+}
